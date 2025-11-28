@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Net Perfume</title>
 </head>
 
@@ -16,10 +17,18 @@
 <header>
     <nav class="navbar">
         <a href="" class="logo">Net Perfume</a>
+        <form role="search" id="form">
+            <input type="search" id="query" name="q"
+            placeholder="Search..."
+            aria-label="Search through site content">
+            <button>
+                <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+            </button>
+        </form>
         <div class="nav-links mobile-menu">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="encyclopédie.html">Encyclopédie</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="encyclopédie.html">Documentation</a></li>
                 <li><a href="#">Parfums</a></li>
                 <li><a href="#">TierLists</a></li>
                 <li><a href="#">A propos</a></li>
