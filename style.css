@@ -1,3 +1,11 @@
+:root{
+    --bg-slate-800: oklch(27.9% 0.041 260.031);
+    --bg-slate-700: oklch(37.2% 0.044 257.287);
+    --bg-slate-600: oklch(44.6% 0.043 257.281);
+    --text-slate-100: oklch(96.8% 0.007 247.896);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +15,26 @@
     font-size: 16px;
 }
 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+    background-color: var(--bg-slate-800);
+    color: var(--text-slate-100);
     padding: 50px;
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 12px;
+    padding: 12px;
     height: 20vh;
 }
 
@@ -20,6 +43,32 @@ main {
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+    margin: 12px;
+    padding: 12px;
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+    
+}
+
+a{
+    color: var(--text-slate-100);
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: #c74586;
 }
 
 .center {
@@ -157,3 +206,53 @@ footer p{
     }
 
 }
+
+
+[role="tablist"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+[aria-selected="true"] {
+  text-decoration-thickness: 0.25em;
+  text-underline-offset: 0.5em;
+  color: #c74586;
+}
+
+/* extra styling to make the tabs look better that wasn't in the video */
+.tabs-container {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background: hsl(0 0% 50% / 0.1);
+}
+
+.wrapper {
+  width: min(50rem, 100% - 2rem);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.site-title {
+  font-size: var(--fs-900);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: var(--fs-800);
+  line-height: 1.1;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
