@@ -177,7 +177,7 @@ footer p{
     
     .nav-links {
         top: 0;
-        left: 0;
+        right: 0;
         position: absolute;
         background-color: rgba(121, 110, 110, 0.438);
         backdrop-filter: blur(7px);
@@ -186,12 +186,12 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100%;
+        margin-right: -100%;
         transition: all 0.5s ease;
     }
 
     .nav-links.mobile-menu {
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .nav-links ul{
