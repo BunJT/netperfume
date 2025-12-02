@@ -26,7 +26,7 @@ tabPanels.forEach((panel) => {
 });
 
 tabsContainer.addEventListener("click", (e) => {
-  const clickedTab = e.target.closest("a");
+  const clickedTab = e.target.closest(".tab-link");
   if (!clickedTab) return;
   e.preventDefault();
 
